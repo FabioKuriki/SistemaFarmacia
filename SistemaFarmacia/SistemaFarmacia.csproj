@@ -98,6 +98,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Atualizar Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atualizar Cliente.Designer.cs">
+      <DependentUpon>Atualizar Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.Designer.cs">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,8 +128,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCliente.Designer.cs">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuProduto.Designer.cs">
+      <DependentUpon>MenuProduto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastrarCliente.resx">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarProduto.resx">
       <DependentUpon>CadastrarProduto.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCliente.resx">
+      <DependentUpon>MenuCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuProduto.resx">
+      <DependentUpon>MenuProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -60,7 +60,7 @@
             this.botaoCadastrar.Name = "botaoCadastrar";
             this.botaoCadastrar.Size = new System.Drawing.Size(176, 53);
             this.botaoCadastrar.TabIndex = 24;
-            this.botaoCadastrar.Text = "Cadastrar";
+            this.botaoCadastrar.Text = "Consultar";
             this.botaoCadastrar.UseVisualStyleBackColor = true;
             // 
             // campoFarmaciaPopular
@@ -160,7 +160,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 9);
+            this.label1.Location = new System.Drawing.Point(107, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(240, 31);
             this.label1.TabIndex = 13;
@@ -170,7 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 450);
+            this.ClientSize = new System.Drawing.Size(448, 450);
             this.Controls.Add(this.botaoVoltar);
             this.Controls.Add(this.botaoCadastrar);
             this.Controls.Add(this.campoFarmaciaPopular);

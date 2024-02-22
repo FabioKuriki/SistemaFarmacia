@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaFarmacia
 {
-    public partial class Cadastro : Form
+    public partial class Menu : Form
     {
-        public Cadastro()
+        public Menu()
         {
             InitializeComponent();
         }
