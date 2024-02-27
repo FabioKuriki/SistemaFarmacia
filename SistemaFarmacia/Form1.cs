@@ -19,10 +19,22 @@ namespace SistemaFarmacia
             bd = new DAO();
         }//Fim do método construtor
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             MenuCliente cliente = new MenuCliente();
             cliente.ShowDialog();
-        }//Fim do botão Cliente
+        }//Fim da imagemCliente
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MenuProduto produto = new MenuProduto();
+            produto.ShowDialog();
+        }//Fim da imagemProduto
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ConsultarVendas vendas = new ConsultarVendas();
+            vendas.ShowDialog();
+        }
     }//Fim da classe
 }//Fim do projeto

@@ -29,10 +29,14 @@ namespace SistemaFarmacia
             consultar.ShowDialog();
         }//Fim do botão consultar
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            teste teste = new teste();
-            teste.ShowDialog();
-        }//Fim do botão atualizar
+
+        }//Fim imagemCliente
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }//Fim do botão voltar
     }//Fim da classe
 }//Fim do projeto

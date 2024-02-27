@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SistemaFarmacia
 {
@@ -17,6 +18,7 @@ namespace SistemaFarmacia
         {
             InitializeComponent();
             bd = new DAO();
+            campoTotal.Enabled = false;
             ConfigurarGrid();
             NomeColunas();
             bd.PreencherVetor();
@@ -45,6 +47,7 @@ namespace SistemaFarmacia
                 dataGridView1.Rows.Add(bd.nome[i], bd.cpf[i],
                                        bd.rg[i], bd.telefone[i], bd.planoSaude[i], bd.farmaciaPopular[i]);
             }//Fim do for
+            campoTotal.Text = "" + bd.contador;
         }//Fim do método
 
         public void ConfigurarGrid()
@@ -63,7 +66,47 @@ namespace SistemaFarmacia
 
         private void botaoCadastrar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(bd.ConsultarPorCpf(maskedTextBox1.Text));
+            EncontrarCliente();
         }//Fim do botão consultar
+
+
+        public void EncontrarCliente()
+        {
+            try
+            {
+                int id = bd.ConsultarPorCpf(maskedTextBox1.Text);//Buscando o cpf digitado
+                if (id == -1)
+                {
+                    MessageBox.Show("CPF não encontrado em sistema");
+                    maskedTextBox1.Text = "";
+                }
+                else
+                {
+                    AtualizarCliente atualizar = new AtualizarCliente();
+                    atualizar.campoNome.Text = bd.nome[id];
+                    atualizar.campoCpf.Text = bd.cpf[id];
+                    atualizar.campoRg.Text = bd.rg[id];
+                    atualizar.campoTelefone.Text = bd.telefone[id];
+                    atualizar.campoPlanoSaude.Text = bd.planoSaude[id];
+                    atualizar.campoFarmaciaPopular.Text = bd.farmaciaPopular[id];
+                    atualizar.ShowDialog();
+                    this.Close();
+                }//Fim do else
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Preencha o campo com um cpf válido\n\n" + erro);
+            }
+        }//Fim do método
+
+        private void botaoVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }//Fim do botaoVoltar
+
+        private void campoTotal_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+           
+        }//Fim do campoTotal
     }//Fim da classe
 }//Fim do projeto

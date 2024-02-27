@@ -49,7 +49,7 @@ namespace SistemaFarmacia
             }
             catch (Exception erro)
             {
-                MessageBox.Show("Algo deu errado!\n\n" + erro);
+                MessageBox.Show("Algo deu errado!\n\n Verifique se já não há o CPF registrado em sistema\n\n\n" + erro);
             }
         }//Fim do método Inserir
 
@@ -100,22 +100,56 @@ namespace SistemaFarmacia
             leitura.Close();
         }//Fim do método
 
-        public string ConsultarPorCpf(string cpfParaConsultar)
+        public void CpfExistente(string cpfAtual)
         {
             PreencherVetor();
             for(i = 0; i < contador; i++)
             {
-                if (cpfParaConsultar == cpf[i] )
+                if (cpfAtual == cpf[i])
                 {
-                    return "Nome: " + nome[i] +
-                           "\nCPF: " + cpf[i] +
-                           "\nRG: " + rg[i] +
-                           "\nTelefone: " + telefone[i]+
-                           "\nPlano de Saúde: " + planoSaude[i] +
-                           "\nfarmaciaPopular: " + farmaciaPopular[i];
+                    MessageBox.Show("O CPF informado já se encontra registrado em sistema");
                 }
             }
-            return "Cliente não encontrado";
-        }
+        }//Fim do método
+
+        public int ConsultarPorCpf(string cpfParaConsultar)
+        {
+            PreencherVetor();
+            for (i = 0; i < contador; i++)
+            {
+                if (cpfParaConsultar == cpf[i])
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }//Fim do método
+
+        public void Atualizar(string nome, string cpf, string rg, string telefone, string planoSaude, string farmaciaPopular)
+        {
+            try
+            {
+                string query = "update cliente set nome = '" + nome + "', rg = '" + rg + "', telefone = '" + telefone +
+                               "', planoSaude = '" + planoSaude + "' where cpf = '" + cpf + "'";
+                //Preparar o comando no BD
+                MySqlCommand sql = new MySqlCommand(query, bd);
+                string resultado = "" + sql.ExecuteNonQuery();
+                MessageBox.Show("Dados atualizados com sucesso!");
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Impossível atualizar\n\n" + erro);
+            }
+        }//Fim do método
+
+        public void Excluir(string cpf)
+        {
+            string query = "delete from cliente where cpf = '" + cpf + "'";
+            MySqlCommand sql = new MySqlCommand(query, bd);
+            string resultado = "" + sql.ExecuteNonQuery();
+
+            MessageBox.Show("Dado excluido com sucesso!!!");
+
+        }//Fim do método 
     }//Fim da classe
 }//Fim do projeto

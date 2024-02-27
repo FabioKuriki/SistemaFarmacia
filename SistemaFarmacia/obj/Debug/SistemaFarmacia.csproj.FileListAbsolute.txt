@@ -35,7 +35,6 @@ C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\bin\Debug\Sys
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.csproj.AssemblyReference.cache
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.CadastrarProduto.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarCliente.resources
-C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.Cadastro.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.Properties.Resources.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.csproj.GenerateResource.cache
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.csproj.CoreCompileInputs.cache
@@ -91,3 +90,14 @@ C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\S
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.pdb
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.teste.resources
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarCliente.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.CadastrarCliente.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.Menu.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCliente.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuProduto.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.AtualizarCliente.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCerteza.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarProduto.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.AtualizarProduto.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCertezaProduto.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ComprarProduto.resources
+C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarVendas.resources

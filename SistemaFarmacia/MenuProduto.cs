@@ -15,6 +15,23 @@ namespace SistemaFarmacia
         public MenuProduto()
         {
             InitializeComponent();
-        }
-    }
-}
+        }//Fim do método construtor
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CadastrarProduto cadastro = new CadastrarProduto();
+            cadastro.ShowDialog();
+        }//Fim do botão cadastrar
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ConsultarProduto consultar = new ConsultarProduto();
+            consultar.ShowDialog();
+        }//Fim do botão Consultar
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }//Fim do botaoVoltar
+    }//Fim da classe
+}//Fim do projeto
