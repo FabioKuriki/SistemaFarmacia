@@ -88,7 +88,6 @@ C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\S
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.csproj.CopyComplete
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.exe
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.pdb
-C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.teste.resources
 C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarCliente.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.CadastrarCliente.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.Menu.resources
@@ -101,3 +100,13 @@ C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\Sis
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCertezaProduto.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ComprarProduto.resources
 C:\Users\Fabio Kuriki\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarVendas.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.AtualizarCliente.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.AtualizarProduto.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ComprarProduto.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarProduto.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.ConsultarVendas.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCerteza.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuCertezaProduto.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.CadastrarUnidade.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.MenuFarmacia.resources
+C:\Users\fabio.hkcesare\source\repos\SistemaFarmacia\SistemaFarmacia\obj\Debug\SistemaFarmacia.SelecionarUnidade.resources

@@ -54,5 +54,16 @@ namespace SistemaFarmacia
             dataGridView1.AllowUserToResizeRows = false;//Para não redimensionar as linhas
             dataGridView1.ColumnCount = 4;//Quantidade de colunas
         }//Fim do ConfigurarGrid
+
+        private void botaoVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }//Fim do botaoVoltar
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            bdVendas.ProcurarProdutoMaisVendido();
+            textBox1.Text = "" + bdVendas.codigoProduto2[0];
+        }//Fim do campo codigo
     }//Fim da classe
 }//Fim do projeto

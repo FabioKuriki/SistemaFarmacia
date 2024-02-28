@@ -86,6 +86,7 @@ namespace SistemaFarmacia
                 else
                 {
                     bdProdutos.Comprar(codigo, dataHora, cpf);
+                    this.Close();
                 }
             }
             catch (Exception erro)

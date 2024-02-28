@@ -13,9 +13,11 @@ namespace SistemaFarmacia
     {
         MySqlConnection bdVendas;
         public int[] codigoVenda;
+        public int[] codigoVenda2;
         public DateTime[] dataVenda;
         public string[] cpf;
         public int[] codigoProduto;
+        public int[] codigoProduto2;
         public int i;
         public int contador;
         public DAOVendas()
@@ -82,6 +84,41 @@ namespace SistemaFarmacia
                 dataVenda[i] = Convert.ToDateTime(leitura["dataVenda"]);
                 cpf[i] = "" + leitura["cpfCliente"];
                 codigoProduto[i] = Convert.ToInt32(leitura["codigoProduto"]);
+                i++;//Mudando do contador
+                contador++;//Contar quantos dados tem no banco
+            }//Fim do while
+
+            //Encerrar o banco
+            leitura.Close();
+        }//Fim do método
+
+        public void ProcurarProdutoMaisVendido()
+        {
+            string query = "select count(codigoProduto), codigoProduto from vendas group by codigoProduto desc";
+          
+            //Instanciar os vetores
+            codigoVenda2= new int[100];
+            codigoProduto2 = new int[100];
+
+            //Preencher com valores genéricos
+            for (i = 0; i < 100; i++)
+            {
+                codigoVenda2[i] = 0;
+                codigoProduto2[i] = 0;
+            }//Fim do for
+
+            //Criar o comando de consultar no BD
+            MySqlCommand coletar = new MySqlCommand(query, bdVendas);
+            //Listar todos os dados que estão no banco
+            MySqlDataReader leitura = coletar.ExecuteReader();
+
+            i = 0;//Utilizar novamente o contador
+            contador = 0;//Contar quantos dados eu tenho no banco
+
+            while (leitura.Read())
+            {
+                codigoVenda2[i] = Convert.ToInt32(leitura["count(codigoProduto)"]);
+                codigoProduto2[i] = Convert.ToInt32(leitura["codigoProduto"]);
                 i++;//Mudando do contador
                 contador++;//Contar quantos dados tem no banco
             }//Fim do while

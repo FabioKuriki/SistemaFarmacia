@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.botaoVoltar = new System.Windows.Forms.Button();
-            this.campoTotal = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,15 +44,7 @@
             this.botaoVoltar.TabIndex = 91;
             this.botaoVoltar.Text = "Voltar";
             this.botaoVoltar.UseVisualStyleBackColor = true;
-            // 
-            // campoTotal
-            // 
-            this.campoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoTotal.Location = new System.Drawing.Point(392, 30);
-            this.campoTotal.Mask = "99999";
-            this.campoTotal.Name = "campoTotal";
-            this.campoTotal.Size = new System.Drawing.Size(148, 38);
-            this.campoTotal.TabIndex = 90;
+            this.botaoVoltar.Click += new System.EventHandler(this.botaoVoltar_Click);
             // 
             // dataGridView1
             // 
@@ -68,22 +60,32 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(151, 33);
+            this.label1.Location = new System.Drawing.Point(131, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 31);
+            this.label1.Size = new System.Drawing.Size(295, 31);
             this.label1.TabIndex = 87;
-            this.label1.Text = "Total de Vendas:";
+            this.label1.Text = "Produto mais vendido";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(444, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 38);
+            this.textBox1.TabIndex = 92;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ConsultarVendas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.botaoVoltar);
-            this.Controls.Add(this.campoTotal);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "ConsultarVendas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ConsultarVendas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -93,8 +95,8 @@
 
         #endregion
         private System.Windows.Forms.Button botaoVoltar;
-        private System.Windows.Forms.MaskedTextBox campoTotal;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

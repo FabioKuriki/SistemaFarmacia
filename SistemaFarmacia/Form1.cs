@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,29 +13,26 @@ namespace SistemaFarmacia
 {
     public partial class Menu : Form
     {
-        DAO bd;
         public Menu()
         {
             InitializeComponent();
-            bd = new DAO();
         }//Fim do método construtor
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Menu_Load(object sender, EventArgs e)
         {
-            MenuCliente cliente = new MenuCliente();
-            cliente.ShowDialog();
-        }//Fim da imagemCliente
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            MenuProduto produto = new MenuProduto();
-            produto.ShowDialog();
-        }//Fim da imagemProduto
+        }//Fim do Menu_Load
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void botaoSelecionar_Click(object sender, EventArgs e)
         {
-            ConsultarVendas vendas = new ConsultarVendas();
-            vendas.ShowDialog();
-        }
+            SelecionarUnidade selecionar = new SelecionarUnidade();
+            selecionar.ShowDialog();
+        }//Fim do botaoSelecionar
+
+        private void botaoCadastrar_Click(object sender, EventArgs e)
+        {
+            CadastrarUnidade cadastrar = new CadastrarUnidade();
+            cadastrar.ShowDialog();
+        }//Fim do botaoCadastrar
     }//Fim da classe
 }//Fim do projeto
